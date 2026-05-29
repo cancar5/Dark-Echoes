@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0 1rem;
+  height: 100vh;
+  background-color: black;
+  box-sizing: border-box;
+  max-height: 50vh;
+}
+
+.episodes-header {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  margin-top: 3rem;
+  margin-left: 3rem;
+  color: white;
+  text-align: left;
+  padding: 0;
+}
+
+main {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 3fr 3fr;
+  grid-template-rows: minmax(10px, auto);
+  gap: 1rem;
+  padding-top: 20px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 50%;
+  background-image: url("https://static.vecteezy.com/ti/vecteur-libre/p1/10800393-illustrationle-de-foret-brumeuse-sombre-arbres-effrayants-la-nuit-paysage-boise-effrayant-vectoriel.jpg");
+}
+
+/* gap: 1rem;
+  max-width: 1200px; /* Adjust max-width for better control over content */
+/* margin: 20px auto;
+  padding: 24px; */
+*/
+
+
+/* @media (width >= 600px) { */
+
+
+.episode-grid {
+  display: grid;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.episode-item {
+  display: grid;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 18pt;
+  cursor: default;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  padding: 1ch;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  background-color: rgb(109, 74, 158);
+}
+
+.episode-item:hover {
+  color: black;
+  background: #eee;
+  font-style: italic;
+  border: 2px solid #040404;
+}
+
+.episode-details {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  background-color: #040404;
+  color: white;
+  border: 3px solid #444;
+  margin-left: 1rem;
+  border-radius: 1rem;
+}
+
+.episode h1,
+h2,
+button,
+p {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+}
